@@ -28,7 +28,7 @@ RUN mkdir /opt/xml && mkdir /opt/notes && \
     wget -P /opt/ https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.4/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz && \
     cd /opt/ && tar -xvf /opt/wkhtmltox-0.12.4_linux-generic-amd64.tar.xz
 
-RUN pip3 install Django requests xmltodict && \
+RUN pip3 install Django==2.1.5 requests==2.21.0 xmltodict==0.11.0 && \
     cd /opt/ && django-admin startproject nmapdashboard && cd /opt/nmapdashboard && \
     git clone https://github.com/Rev3rseSecurity/WebMap.git nmapreport && \
     cd nmapreport && git checkout v2.3/master

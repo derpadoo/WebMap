@@ -1,3 +1,4 @@
-requests
-xmltodict
-python-nmap
+Django==2.1.5
+python-nmap==0.6.1
+requests==2.21.0
+xmltodict==0.11.0
